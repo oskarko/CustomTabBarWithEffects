@@ -16,6 +16,9 @@
 		E243076C26D8F34C0075DE3A /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243076B26D8F34C0075DE3A /* CustomTabBar.swift */; };
 		E243076F26D8F39A0075DE3A /* TabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243076E26D8F39A0075DE3A /* TabViewModel.swift */; };
 		E243077126D8F5660075DE3A /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243077026D8F5660075DE3A /* TabBarButton.swift */; };
+		E243077326D900A30075DE3A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243077226D900A30075DE3A /* HomeView.swift */; };
+		E243077526D900B30075DE3A /* PurchasedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243077426D900B30075DE3A /* PurchasedView.swift */; };
+		E243077726D900BB0075DE3A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243077626D900BB0075DE3A /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		E243076B26D8F34C0075DE3A /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		E243076E26D8F39A0075DE3A /* TabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewModel.swift; sourceTree = "<group>"; };
 		E243077026D8F5660075DE3A /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
+		E243077226D900A30075DE3A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E243077426D900B30075DE3A /* PurchasedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasedView.swift; sourceTree = "<group>"; };
+		E243077626D900BB0075DE3A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,9 @@
 			children = (
 				E243076B26D8F34C0075DE3A /* CustomTabBar.swift */,
 				E243077026D8F5660075DE3A /* TabBarButton.swift */,
+				E243077226D900A30075DE3A /* HomeView.swift */,
+				E243077426D900B30075DE3A /* PurchasedView.swift */,
+				E243077626D900BB0075DE3A /* SettingsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -293,8 +302,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E243076F26D8F39A0075DE3A /* TabViewModel.swift in Sources */,
+				E243077726D900BB0075DE3A /* SettingsView.swift in Sources */,
+				E243077526D900B30075DE3A /* PurchasedView.swift in Sources */,
 				E243074126D8F2990075DE3A /* ContentView.swift in Sources */,
 				E243076C26D8F34C0075DE3A /* CustomTabBar.swift in Sources */,
+				E243077326D900A30075DE3A /* HomeView.swift in Sources */,
 				E243077126D8F5660075DE3A /* TabBarButton.swift in Sources */,
 				E243073F26D8F2990075DE3A /* CustomTabBarWithEffectsApp.swift in Sources */,
 			);

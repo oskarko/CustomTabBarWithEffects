@@ -24,13 +24,16 @@ struct CustomTabBar: View {
     
     var body: some View {
         TabView(selection: $viewModel.currentTab) {
-            Text("Home")
+            HomeView()
+                .environmentObject(viewModel)
                 .tag("Home")
             
-            Text("Purchased")
+            PurchasedView()
+                .environmentObject(viewModel)
                 .tag("Purchased")
             
-            Text("Settings")
+            SettingsView()
+                .environmentObject(viewModel)
                 .tag("Settings")
         }
         .overlay(
@@ -41,6 +44,13 @@ struct CustomTabBar: View {
                 TabBarButton(title: "Settings", image: "gear", animation: animation)
             } // HStack
             .environmentObject(viewModel)
+            .padding(.vertical, 10)
+            .padding(.horizontal)
+            .background(Color.blue) //, in: Capsule())
+            .padding(.horizontal, 20)
+            .padding(.bottom, 8)
+            .shadow(color: .black.opacity(0.09), radius: 5, x: 5, y: 5)
+            .shadow(color: .black.opacity(0.09), radius: 5, x: -5, y: 0)
             
             , alignment: .bottom
         )

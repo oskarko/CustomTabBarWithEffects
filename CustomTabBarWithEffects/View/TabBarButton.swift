@@ -29,12 +29,31 @@ struct TabBarButton: View {
             VStack {
                 Image(systemName: image)
                     .font(.title2)
+                    .frame(height: 18)
                 
                 Text(title)
                     .font(.caption.bold())
             } // VStack
             .foregroundColor(viewModel.currentTab == title ? .purple : .gray)
             .frame(maxWidth: .infinity)
+            .overlay(
+                ZStack {
+                    if viewModel.currentTab == title {
+                        TabIndicator()
+                            .fill(.linearGradient(
+                                    .init(colors: [
+                                        Color.purple.opacity(0.2),
+                                        Color.purple.opacity(0.1),
+                                        Color.clear
+                                    ]),
+                                    startPoint: .top,
+                                    endPoint: .bottom))
+                            .matchedGeometryEffect(id: "TAB", in: animation)
+                            .padding(.top, -10)
+                            .padding(.horizontal, 8)
+                    }
+                } // ZStack
+            )
         }
     }
 }
@@ -44,3 +63,14 @@ struct TabBarButton: View {
 //        TabBarButton()
 //    }
 //}
+
+struct TabIndicator: Shape {
+    func path(in rect: CGRect) -> Path {
+        return Path { path in
+            path.move(to: CGPoint(x: 0, y: 0))
+            path.addLine(to: CGPoint(x: rect.width, y: 0))
+            path.addLine(to: CGPoint(x: rect.width - 10, y: rect.height))
+            path.addLine(to: CGPoint(x: 10, y: rect.height))
+        }
+    }
+}
