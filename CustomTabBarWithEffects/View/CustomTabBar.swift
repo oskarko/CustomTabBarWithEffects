@@ -14,13 +14,36 @@ struct CustomTabBar: View {
     // MARK: - Properties
     
     @StateObject var viewModel = TabViewModel()
+    @Namespace var animation
     
     // MARK: - Body
     
+    init() {
+        UITabBar.appearance().isHidden = true
+    }
+    
     var body: some View {
         TabView(selection: $viewModel.currentTab) {
+            Text("Home")
+                .tag("Home")
             
+            Text("Purchased")
+                .tag("Purchased")
+            
+            Text("Settings")
+                .tag("Settings")
         }
+        .overlay(
+            
+            HStack {
+                TabBarButton(title: "Home", image: "house", animation: animation)
+                TabBarButton(title: "Purchased", image: "purchased.circle", animation: animation)
+                TabBarButton(title: "Settings", image: "gear", animation: animation)
+            } // HStack
+            .environmentObject(viewModel)
+            
+            , alignment: .bottom
+        )
     }
 }
 

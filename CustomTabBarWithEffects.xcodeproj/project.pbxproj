@@ -15,6 +15,7 @@
 		E243075C26D8F29C0075DE3A /* CustomTabBarWithEffectsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243075B26D8F29C0075DE3A /* CustomTabBarWithEffectsUITests.swift */; };
 		E243076C26D8F34C0075DE3A /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243076B26D8F34C0075DE3A /* CustomTabBar.swift */; };
 		E243076F26D8F39A0075DE3A /* TabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243076E26D8F39A0075DE3A /* TabViewModel.swift */; };
+		E243077126D8F5660075DE3A /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243077026D8F5660075DE3A /* TabBarButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E243075D26D8F29C0075DE3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E243076B26D8F34C0075DE3A /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		E243076E26D8F39A0075DE3A /* TabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewModel.swift; sourceTree = "<group>"; };
+		E243077026D8F5660075DE3A /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				E243076B26D8F34C0075DE3A /* CustomTabBar.swift */,
+				E243077026D8F5660075DE3A /* TabBarButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				E243076F26D8F39A0075DE3A /* TabViewModel.swift in Sources */,
 				E243074126D8F2990075DE3A /* ContentView.swift in Sources */,
 				E243076C26D8F34C0075DE3A /* CustomTabBar.swift in Sources */,
+				E243077126D8F5660075DE3A /* TabBarButton.swift in Sources */,
 				E243073F26D8F2990075DE3A /* CustomTabBarWithEffectsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
